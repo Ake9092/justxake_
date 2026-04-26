@@ -4,431 +4,257 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="@justxake_ — Fashion strategy, wardrobe guides and brand consulting. Chennai, Tamil Nadu." />
-  <title>@justxake_</title>
+  <meta name="description" content="ASCOLT by ake — Fashion strategy, wardrobe guides, brand consulting and original products. Chennai, Tamil Nadu." />
+  <title>ASCOLT by ake</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
   <style>
-    /* ── RESET ─────────────────────────────────────── */
     *, *::before, *::after {
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
       box-sizing: border-box;
       -webkit-tap-highlight-color: transparent;
     }
-
     :root {
       --blue: #10069F;
       --black: #000000;
       --white: #ffffff;
       --dim: rgba(255,255,255,0.28);
-      --dimmer: rgba(255,255,255,0.08);
       --border: rgba(255,255,255,0.07);
       --max: 520px;
     }
-
-    html {
-      font-size: 16px;
-      -webkit-text-size-adjust: 100%;
-      scroll-behavior: smooth;
-    }
-
+    html { font-size: 16px; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
     body {
-      background: var(--black);
-      color: var(--white);
+      background: var(--black); color: var(--white);
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      min-height: 100vh;
-      min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      min-height: 100vh; min-height: 100dvh;
+      display: flex; flex-direction: column; align-items: center;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       overflow-x: hidden;
     }
 
-    /* ── NAV ───────────────────────────────────────── */
+    /* NAV */
     .nav {
-      width: 100%;
-      background: var(--blue);
+      width: 100%; background: var(--blue);
       padding: 13px 28px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
     }
-
     .nav-handle {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--white);
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--white);
     }
+    .nav-handle em { font-style: normal; font-weight: 400; opacity: 0.6; }
+    .nav-pip { width: 6px; height: 6px; border-radius: 50%; background: rgba(255,255,255,0.3); }
 
-    .nav-pip {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.3);
-    }
-
-    /* ── WRAPPER ───────────────────────────────────── */
-    .wrap {
-      width: 100%;
-      max-width: var(--max);
-      padding: 0 28px;
-    }
-
-    /* ── HERO ──────────────────────────────────────── */
-    .hero {
-      width: 100%;
-      max-width: var(--max);
-      padding: 56px 28px 0;
-    }
-
+    /* HERO */
+    .hero { width: 100%; max-width: var(--max); padding: 52px 28px 0; }
     .hero-label {
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.5em;
-      text-transform: uppercase;
-      color: var(--blue);
-      margin-bottom: 20px;
-      display: block;
+      font-size: 9px; font-weight: 700;
+      letter-spacing: 0.5em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 16px; display: block;
     }
-
-    .hero-h1 {
+    .brand-name {
       font-family: 'Bebas Neue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-size: clamp(52px, 14vw, 88px);
-      font-weight: 400;
-      line-height: 0.95;
-      letter-spacing: 0.02em;
-      color: var(--white);
-      text-transform: uppercase;
-      margin-bottom: 0;
+      font-size: clamp(72px, 20vw, 124px);
+      font-weight: 400; line-height: 0.88;
+      letter-spacing: 0.01em; color: var(--white);
+      text-transform: uppercase; display: block;
     }
-
-    .hero-h1 .accent {
-      color: var(--blue);
-      display: inline;
+    .brand-by {
+      font-size: clamp(11px, 2.8vw, 15px); font-weight: 400;
+      letter-spacing: 0.55em; text-transform: uppercase;
+      color: rgba(255,255,255,0.22);
+      display: block; margin-top: 10px;
     }
-
+    .brand-by strong { color: var(--white); font-weight: 700; letter-spacing: 0.55em; }
     .hero-sub {
-      font-size: 10px;
-      font-weight: 400;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--dim);
-      margin-top: 20px;
-      line-height: 2.2;
-      display: block;
+      font-size: 9px; font-weight: 400;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: rgba(255,255,255,0.18);
+      margin-top: 10px; line-height: 2.2; display: block;
     }
+    .hero-rule { width: 100%; height: 1px; background: var(--border); margin-top: 36px; }
 
-    .hero-rule {
-      width: 100%;
-      height: 1px;
-      background: var(--border);
-      margin-top: 40px;
-    }
-
-    /* ── SECTION LABELS ────────────────────────────── */
+    /* SECTION LABELS */
+    .wrap { width: 100%; max-width: var(--max); padding: 0 28px; }
     .sec-label {
-      font-size: 7px;
-      font-weight: 700;
-      letter-spacing: 0.55em;
-      text-transform: uppercase;
+      font-size: 7px; font-weight: 700;
+      letter-spacing: 0.55em; text-transform: uppercase;
       color: rgba(255,255,255,0.15);
-      padding: 28px 0 10px;
-      display: block;
+      padding: 28px 0 10px; display: block;
     }
 
-    /* ── CARDS ─────────────────────────────────────── */
+    /* CARDS */
     .card {
-      display: block;
-      width: 100%;
-      text-decoration: none;
-      background: var(--black);
-      border: 1px solid var(--border);
+      display: block; width: 100%; text-decoration: none;
+      background: var(--black); border: 1px solid var(--border);
       padding: 20px 52px 18px 20px;
-      margin-bottom: 2px;
-      cursor: pointer;
-      position: relative;
+      margin-bottom: 2px; cursor: pointer; position: relative;
       transition: border-color 0.18s ease, background 0.18s ease;
       -webkit-transition: border-color 0.18s ease, background 0.18s ease;
     }
-
-    .card:hover,
-    .card:focus-visible {
-      border-color: var(--blue);
-      background: #04020f;
-      outline: none;
-    }
-
+    .card:hover, .card:focus-visible { border-color: var(--blue); background: #04020f; outline: none; }
     .card-arrow {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      font-size: 16px;
-      color: rgba(255,255,255,0.15);
+      position: absolute; right: 20px; top: 50%;
+      transform: translateY(-50%); -webkit-transform: translateY(-50%);
+      font-size: 16px; color: rgba(255,255,255,0.15);
       transition: color 0.18s ease, right 0.18s ease;
       -webkit-transition: color 0.18s ease, right 0.18s ease;
       font-style: normal;
     }
-
-    .card:hover .card-arrow,
-    .card:focus-visible .card-arrow {
-      color: var(--blue);
-      right: 16px;
-    }
-
+    .card:hover .card-arrow, .card:focus-visible .card-arrow { color: var(--blue); right: 16px; }
     .card-tag {
-      font-size: 7px;
-      font-weight: 700;
-      letter-spacing: 0.45em;
-      text-transform: uppercase;
-      color: var(--blue);
-      margin-bottom: 7px;
-      display: block;
+      font-size: 7px; font-weight: 700;
+      letter-spacing: 0.45em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 7px; display: block;
     }
-
     .card-title {
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      color: var(--white);
-      margin-bottom: 5px;
-      line-height: 1.2;
+      font-size: 17px; font-weight: 700;
+      letter-spacing: -0.01em; color: var(--white);
+      margin-bottom: 5px; line-height: 1.2;
     }
-
     .card-desc {
-      font-size: 11px;
-      font-weight: 400;
-      letter-spacing: 0.02em;
-      color: rgba(255,255,255,0.3);
-      line-height: 1.65;
+      font-size: 11px; font-weight: 400;
+      letter-spacing: 0.02em; color: rgba(255,255,255,0.3); line-height: 1.65;
     }
 
-    /* ── FREE CARD ─────────────────────────────────── */
-    .card-free {
-      background: #060606;
-      border-color: rgba(255,255,255,0.05);
-    }
-
-    .card-free .card-tag {
-      color: rgba(255,255,255,0.2);
-    }
-
-    .card-free .card-arrow {
-      display: none;
-    }
-
-    .card-free:hover {
-      border-color: rgba(255,255,255,0.15);
-      background: #0a0a0a;
-    }
-
+    /* FREE CARD */
+    .card-free { background: #060606; border-color: rgba(255,255,255,0.05); }
+    .card-free .card-tag { color: rgba(255,255,255,0.2); }
+    .card-free .card-arrow { display: none; }
+    .card-free:hover { border-color: rgba(255,255,255,0.15); background: #0a0a0a; }
     .free-badge {
-      position: absolute;
-      right: 18px;
-      top: 18px;
-      font-size: 7px;
-      font-weight: 700;
-      letter-spacing: 0.3em;
-      color: rgba(255,255,255,0.12);
-      text-transform: uppercase;
+      position: absolute; right: 18px; top: 18px;
+      font-size: 7px; font-weight: 700;
+      letter-spacing: 0.3em; color: rgba(255,255,255,0.12); text-transform: uppercase;
     }
 
-    /* ── CONSULT CARD (blue) ───────────────────────── */
+    /* CONSULT CARD */
     .card-consult {
-      background: var(--blue);
-      border-color: var(--blue);
-      padding-top: 24px;
-      padding-bottom: 22px;
+      background: var(--blue); border-color: var(--blue);
+      padding-top: 24px; padding-bottom: 22px;
+    }
+    .card-consult .card-tag { color: rgba(255,255,255,0.45); }
+    .card-consult .card-title { font-size: 20px; letter-spacing: -0.02em; }
+    .card-consult .card-desc { color: rgba(255,255,255,0.45); }
+    .card-consult .card-arrow { color: rgba(255,255,255,0.3); }
+    .card-consult:hover, .card-consult:focus-visible { background: #0c04c0; border-color: #0c04c0; }
+    .card-consult:hover .card-arrow, .card-consult:focus-visible .card-arrow { color: var(--white); }
+
+    /* DROP 01 TEASER */
+    .drop-section { width: 100%; max-width: var(--max); padding: 0 28px; }
+    .drop-card {
+      width: 100%; border: 1px solid rgba(255,255,255,0.07);
+      position: relative; overflow: hidden;
+      background: #030303; padding: 32px 24px 28px;
+    }
+    .drop-cap-svg {
+      position: absolute; right: -8px; bottom: -8px;
+      width: 170px; height: 170px; opacity: 0.055;
+      pointer-events: none;
+    }
+    .drop-eyebrow {
+      font-size: 7px; font-weight: 700;
+      letter-spacing: 0.55em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 12px; display: block;
+    }
+    .drop-title {
+      font-family: 'Bebas Neue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: clamp(42px, 11vw, 64px);
+      font-weight: 400; letter-spacing: 0.02em;
+      color: var(--white); line-height: 0.92;
+      text-transform: uppercase; margin-bottom: 6px;
+    }
+    .drop-title .drop-num { color: var(--blue); }
+    .drop-sub {
+      font-size: 10px; font-weight: 400;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: rgba(255,255,255,0.22); margin-bottom: 24px;
+      display: block; line-height: 2;
+    }
+    .drop-notify {
+      display: inline-flex; align-items: center; gap: 10px;
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 11px 18px;
+      font-size: 9px; font-weight: 700;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(255,255,255,0.4); text-decoration: none;
+      transition: border-color 0.18s, color 0.18s;
+      -webkit-transition: border-color 0.18s, color 0.18s;
+    }
+    .drop-notify:hover { border-color: var(--blue); color: var(--white); }
+    .drop-notify-dot {
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--blue); flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+      -webkit-animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.35; transform: scale(0.65); }
+    }
+    @-webkit-keyframes pulse {
+      0%, 100% { opacity: 1; -webkit-transform: scale(1); }
+      50% { opacity: 0.35; -webkit-transform: scale(0.65); }
     }
 
-    .card-consult .card-tag {
-      color: rgba(255,255,255,0.45);
-    }
-
-    .card-consult .card-title {
-      font-size: 20px;
-      letter-spacing: -0.02em;
-    }
-
-    .card-consult .card-desc {
-      color: rgba(255,255,255,0.45);
-    }
-
-    .card-consult .card-arrow {
-      color: rgba(255,255,255,0.3);
-    }
-
-    .card-consult:hover,
-    .card-consult:focus-visible {
-      background: #0c04c0;
-      border-color: #0c04c0;
-    }
-
-    .card-consult:hover .card-arrow,
-    .card-consult:focus-visible .card-arrow {
-      color: var(--white);
-    }
-
-    /* ── TICKER ────────────────────────────────────── */
+    /* TICKER */
     .ticker-outer {
-      width: 100%;
-      background: var(--blue);
-      overflow: hidden;
-      padding: 10px 0;
-      margin-top: 40px;
+      width: 100%; background: var(--blue);
+      overflow: hidden; padding: 10px 0; margin-top: 40px;
     }
-
     .ticker-track {
-      display: flex;
-      width: max-content;
-      animation: ticker 22s linear infinite;
-      -webkit-animation: ticker 22s linear infinite;
+      display: flex; width: max-content;
+      animation: ticker 26s linear infinite;
+      -webkit-animation: ticker 26s linear infinite;
     }
-
-    @keyframes ticker {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    @-webkit-keyframes ticker {
-      0%   { -webkit-transform: translateX(0); }
-      100% { -webkit-transform: translateX(-50%); }
-    }
-
+    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    @-webkit-keyframes ticker { 0% { -webkit-transform: translateX(0); } 100% { -webkit-transform: translateX(-50%); } }
     .ticker-item {
-      font-size: 8px;
-      font-weight: 700;
-      letter-spacing: 0.38em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.45);
-      white-space: nowrap;
-      padding: 0 36px;
+      font-size: 8px; font-weight: 700;
+      letter-spacing: 0.38em; text-transform: uppercase;
+      color: rgba(255,255,255,0.45); white-space: nowrap; padding: 0 36px;
     }
+    .ticker-item b { color: var(--white); font-weight: 700; }
 
-    .ticker-item b {
-      color: var(--white);
-      font-weight: 700;
-    }
-
-    /* ── BOTTOM ────────────────────────────────────── */
-    .bottom {
-      width: 100%;
-      max-width: var(--max);
-      padding: 28px 28px 60px;
-    }
-
-    .social-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0;
-      margin-bottom: 20px;
-    }
-
+    /* BOTTOM */
+    .bottom { width: 100%; max-width: var(--max); padding: 28px 28px 60px; }
+    .social-row { display: flex; flex-wrap: wrap; gap: 0; margin-bottom: 20px; }
     .social-a {
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.18);
-      text-decoration: none;
+      font-size: 9px; font-weight: 700;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(255,255,255,0.18); text-decoration: none;
       padding: 10px 20px 10px 0;
-      transition: color 0.15s;
-      -webkit-transition: color 0.15s;
+      transition: color 0.15s; -webkit-transition: color 0.15s;
     }
-
-    .social-a:hover,
-    .social-a:focus-visible {
-      color: var(--white);
-      outline: none;
-    }
-
+    .social-a:hover, .social-a:focus-visible { color: var(--white); outline: none; }
     .credit {
-      font-size: 8px;
-      font-weight: 400;
-      letter-spacing: 0.18em;
-      color: rgba(255,255,255,0.08);
-      text-transform: uppercase;
+      font-size: 8px; font-weight: 400;
+      letter-spacing: 0.18em; color: rgba(255,255,255,0.08); text-transform: uppercase;
     }
 
-    /* ── RESPONSIVE ────────────────────────────────── */
-
-    /* Laptop / desktop — centre the column */
+    /* RESPONSIVE */
     @media (min-width: 640px) {
-      body {
-        padding-top: 0;
-      }
-
-      .hero,
-      .wrap,
-      .bottom {
-        padding-left: 40px;
-        padding-right: 40px;
-      }
-
-      .hero {
-        padding-top: 72px;
-      }
-
-      .hero-h1 {
-        font-size: 96px;
-      }
-
-      .card {
-        padding: 24px 60px 22px 24px;
-      }
-
-      .card-consult {
-        padding-top: 28px;
-        padding-bottom: 26px;
-      }
-
-      .card-title {
-        font-size: 18px;
-      }
-
-      .card-consult .card-title {
-        font-size: 22px;
-      }
+      .hero, .wrap, .drop-section, .bottom { padding-left: 40px; padding-right: 40px; }
+      .hero { padding-top: 72px; }
+      .card { padding: 24px 60px 22px 24px; }
+      .card-consult { padding-top: 28px; padding-bottom: 26px; }
+      .card-title { font-size: 18px; }
+      .card-consult .card-title { font-size: 22px; }
+      .drop-cap-svg { width: 210px; height: 210px; }
     }
-
-    /* Wide screens — add visual breathing room */
     @media (min-width: 900px) {
       :root { --max: 560px; }
-
-      .nav {
-        padding: 14px 40px;
-      }
+      .nav { padding: 14px 40px; }
     }
-
-    /* Small phones */
     @media (max-width: 360px) {
-      .hero-h1 {
-        font-size: 48px;
-      }
-
-      .wrap,
-      .hero,
-      .bottom {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
+      .brand-name { font-size: 60px; }
+      .wrap, .hero, .drop-section, .bottom { padding-left: 20px; padding-right: 20px; }
     }
-
-    /* Safe area for iPhone notch / home indicator */
     @supports (padding-bottom: env(safe-area-inset-bottom)) {
-      .bottom {
-        padding-bottom: calc(60px + env(safe-area-inset-bottom));
-      }
+      .bottom { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
     }
   </style>
 </head>
@@ -436,20 +262,16 @@
 
   <!-- NAV -->
   <nav class="nav" aria-label="Site header">
-    <span class="nav-handle">@justxake_</span>
+    <span class="nav-handle">ASCOLT <em>by</em> ake</span>
     <div class="nav-pip" aria-hidden="true"></div>
   </nav>
 
   <!-- HERO -->
   <header class="hero" role="banner">
-    <span class="hero-label">Fashion · Strategy · South India</span>
-    <h1 class="hero-h1">
-      Dress like<br>
-      you know<br>
-      something<br>
-      they <span class="accent">don't.</span>
-    </h1>
-    <span class="hero-sub">Psychology. Power. Precision.<br>Chennai &nbsp;·&nbsp; Tamil Nadu</span>
+    <span class="hero-label">Chennai · Tamil Nadu · South India</span>
+    <span class="brand-name">ASCOLT</span>
+    <span class="brand-by">by <strong>ake</strong></span>
+    <span class="hero-sub">Fashion · Strategy · Original Product &nbsp;·&nbsp; @justxake_</span>
     <div class="hero-rule"></div>
   </header>
 
@@ -457,7 +279,6 @@
   <main class="wrap" role="main">
 
     <span class="sec-label">Free</span>
-
    <a href="/justxake_/insider-checklist.pdf" download class="card card-free" aria-label="Download the free insider checklist">
       <span class="free-badge">Free</span>
       <span class="card-tag">Download Now</span>
@@ -466,16 +287,14 @@
     </a>
 
     <span class="sec-label">Guide</span>
-
     <a href="#" class="card" aria-label="Buy the personal wardrobe guide">
-      <span class="card-tag">Digital Product</span>
+      <span class="card-tag">Digital Product — ₹399</span>
       <div class="card-title">Personal Wardrobe Guide</div>
       <p class="card-desc">Psychology. Framework. Fit. Built for the South Indian context.</p>
       <span class="card-arrow" aria-hidden="true">→</span>
     </a>
 
     <span class="sec-label">Work Together</span>
-
     <a href="https://wa.me/917010089900?text=Hi%2C%20I%27m%20interested%20in%20brand%20%26%20style%20consulting%20with%20%40justxake_" class="card card-consult" aria-label="Book a brand and style consulting session" target="_blank" rel="noopener noreferrer">
       <span class="card-tag">1:1 Session</span>
       <div class="card-title">Brand &amp; Style Consulting</div>
@@ -485,22 +304,59 @@
 
   </main>
 
+  <!-- DROP 01 TEASER -->
+  <section class="drop-section" aria-label="Upcoming product drop">
+    <span class="sec-label">Coming</span>
+    <div class="drop-card">
+
+      <!-- Dad cap silhouette — YSL Hedi Slimane proportions -->
+      <svg class="drop-cap-svg" viewBox="0 0 280 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Crown -->
+        <path d="M60 155 Q56 118 72 96 Q96 66 140 60 Q184 54 210 78 Q232 98 234 130 L238 155 Z" fill="white"/>
+        <!-- Brim — long flat dad cap brim -->
+        <rect x="30" y="152" width="210" height="14" rx="3" fill="white"/>
+        <!-- Brim tip curve -->
+        <path d="M30 152 Q26 158 30 166 L40 166 L40 152 Z" fill="white" opacity="0.6"/>
+        <path d="M240 152 Q248 155 246 163 L238 166 L238 152 Z" fill="white" opacity="0.4"/>
+        <!-- Buckle strap back -->
+        <path d="M232 130 Q248 138 252 152 Q254 160 244 164 L238 162 Z" fill="white" opacity="0.5"/>
+        <!-- Sweatband seam line -->
+        <path d="M68 148 Q104 138 140 136 Q176 134 216 144" stroke="white" stroke-width="1.5" fill="none" opacity="0.18" stroke-linecap="round"/>
+        <!-- Front panel seam -->
+        <path d="M140 60 L140 136" stroke="white" stroke-width="1" fill="none" opacity="0.12" stroke-linecap="round"/>
+        <!-- Eyelets suggestion -->
+        <circle cx="108" cy="92" r="3" fill="none" stroke="white" stroke-width="1.5" opacity="0.2"/>
+        <circle cx="172" cy="88" r="3" fill="none" stroke="white" stroke-width="1.5" opacity="0.2"/>
+        <!-- Button top -->
+        <circle cx="140" cy="60" r="7" fill="white" opacity="0.6"/>
+        <circle cx="140" cy="60" r="4" fill="white" opacity="0.9"/>
+      </svg>
+
+      <span class="drop-eyebrow">Ascolt Original · Drop 01</span>
+      <div class="drop-title">Something<br>is <span class="drop-num">cooking.</span></div>
+      <span class="drop-sub">A cap. Not just a cap.<br>More when it's ready.</span>
+      <a href="https://wa.me/917010089900?text=Notify%20me%20for%20ASCOLT%20Drop%2001" class="drop-notify" target="_blank" rel="noopener noreferrer" aria-label="Get notified for Drop 01">
+        <span class="drop-notify-dot" aria-hidden="true"></span>
+        Notify me
+      </a>
+    </div>
+  </section>
+
   <!-- TICKER -->
   <div class="ticker-outer" aria-hidden="true">
     <div class="ticker-track">
-      <!-- duplicated for seamless loop -->
-      <span class="ticker-item"><b>@justxake_</b> · fashion is psychology ·</span>
-      <span class="ticker-item">dress with intention ·</span>
+      <span class="ticker-item"><b>ASCOLT by ake</b> · drop 01 coming ·</span>
+      <span class="ticker-item">fashion is psychology ·</span>
       <span class="ticker-item">Chennai · Tamil Nadu ·</span>
-      <span class="ticker-item">the rules behind the rules ·</span>
-      <span class="ticker-item"><b>@justxake_</b> · strategy over aesthetics ·</span>
-      <span class="ticker-item">South India ·</span>
-      <span class="ticker-item"><b>@justxake_</b> · fashion is psychology ·</span>
       <span class="ticker-item">dress with intention ·</span>
+      <span class="ticker-item"><b>@justxake_</b> · something is cooking ·</span>
+      <span class="ticker-item">South India · ascolt ·</span>
+      <span class="ticker-item"><b>ASCOLT by ake</b> · drop 01 coming ·</span>
+      <span class="ticker-item">fashion is psychology ·</span>
       <span class="ticker-item">Chennai · Tamil Nadu ·</span>
-      <span class="ticker-item">the rules behind the rules ·</span>
-      <span class="ticker-item"><b>@justxake_</b> · strategy over aesthetics ·</span>
-      <span class="ticker-item">South India ·</span>
+      <span class="ticker-item">dress with intention ·</span>
+      <span class="ticker-item"><b>@justxake_</b> · something is cooking ·</span>
+      <span class="ticker-item">South India · ascolt ·</span>
     </div>
   </div>
 
@@ -511,7 +367,7 @@
       <a href="mailto:work4ake@gmail.com" class="social-a">Email</a>
       <a href="https://wa.me/917010089900" class="social-a" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </nav>
-    <p class="credit">© 2025 @justxake_ &nbsp;·&nbsp; All rights reserved</p>
+    <p class="credit">© 2025 ASCOLT by ake &nbsp;·&nbsp; All rights reserved</p>
   </footer>
 
 </body>
